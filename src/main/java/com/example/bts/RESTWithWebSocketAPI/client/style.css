@@ -1,0 +1,61 @@
+body {
+    font-family: Arial, sans-serif;
+    background: #f9f9f9;
+    padding: 20px;
+}
+
+#messages {
+    background: white;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 10px;
+    height: 300px;
+    overflow-y: auto;
+}
+
+.msg {
+    padding: 5px 10px;
+    border-bottom: 1px solid #eee;
+}
+
+.msg:last-child {
+    border-bottom: none;
+}
+
+.status {
+    color: green;
+    font-weight: bold;
+}
+
+/* Align elements side by side */
+.input-row {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.input-row p {
+    margin: 0;
+    margin-right: 10px;
+}
+
+.input-row input {
+    flex: 1;
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.input-row button {
+    margin-left: 10px;
+    padding: 6px 12px;
+    border: none;
+    border-radius: 4px;
+    background-color: #4CAF50;
+    color: white;
+    cursor: pointer;
+}
+
+.input-row button:hover {
+    background-color: #45a049;
+}

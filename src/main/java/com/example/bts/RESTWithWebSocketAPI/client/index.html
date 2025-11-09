@@ -5,40 +5,17 @@
     <script src="https://cdn.jsdelivr.net/npm/sockjs-client@1/dist/sockjs.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/stompjs@2.3.3/lib/stomp.min.js"></script>
 
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            background: #f9f9f9;
-            padding: 20px;
-        }
-
-        #messages {
-            background: white;
-            border: 1px solid #ddd;
-            border-radius: 8px;
-            padding: 10px;
-            height: 300px;
-            overflow-y: auto;
-        }
-
-        .msg {
-            padding: 5px 10px;
-            border-bottom: 1px solid #eee;
-        }
-
-        .msg:last-child {
-            border-bottom: none;
-        }
-
-        .status {
-            color: green;
-            font-weight: bold;
-        }
-    </style>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
 <h2>WebSocket Messages</h2>
 <p id="status">Connecting...</p>
+<div class="input-row">
+    <p>Subscribe to topic:</p>
+    <input type="text" id="topicInput" placeholder="/topic/example">
+    <button id="submitBtn">Submit</button>
+</div>
+<p id="clientSubscription"></p>
 <div id="messages"></div>
 <script src="script.js"></script>
 </body>
